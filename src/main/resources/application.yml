@@ -22,4 +22,3 @@ keycloak:
       username: vipolar
       password: examplePassword!
     realmImportFile: baeldung-realm.json
-    proxy: reencrypt

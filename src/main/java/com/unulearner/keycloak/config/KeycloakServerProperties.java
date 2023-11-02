@@ -5,21 +5,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "keycloak.server")
 public class KeycloakServerProperties {
 
-    String contextPath;// = "/auth";
+    String contextPath;
 
-    String realmImportFile;// = "baeldung-realm.json";
-
-    String proxy;
+    String realmImportFile;
 
     AdminUser adminUser = new AdminUser();
-
-    public String getProxy() {
-        return proxy;
-    }
-
-    public void setProxy(String proxy) {
-        this.proxy = proxy;
-    }
 
     public String getContextPath() {
         return contextPath;
@@ -47,9 +37,9 @@ public class KeycloakServerProperties {
 
     public static class AdminUser {
 
-        String username;// = "admin";
+        String username;
 
-        String password;// = "admin";
+        String password;
 
         public String getUsername() {
             return username;
